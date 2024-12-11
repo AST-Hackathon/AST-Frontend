@@ -30,5 +30,5 @@ module.exports = {
   optimization: {
     minimizer: [`...`, new CssMinimizerPlugin()],
   },
-  mode: "development",
+  mode: "devolp",
 };
