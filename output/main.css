@@ -1,0 +1,12 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/index.css (1) ***!
+  \*************************************************************************/
+body{
+  background-color: brown;
+  color: aliceblue;
+  font-family: "Manrope";
+}
