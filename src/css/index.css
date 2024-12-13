@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-/* @font-face {
+
+@font-face {
   font-family: 'Ostrovsky';
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/Ostrovsky-Bold.woff") format("woff")
-} */
+  src: url("../../fonts/Ostrovsky-Bold_0.woff2") format("woff2")
+}
 
+.ostrovsky-caps{
+  font-size:calc(20px + 20 * (100vw - 320px) / 1640);
+  font-family: Ostrovsky;
+
+}
 p {
   margin: 0;
 }
@@ -56,10 +62,6 @@ body{
   width: 611px;
 }
 
-.Ostrovsky {
-  font-size: 40px;
-}
-
 .advantages {
   margin-top: 80px;
   position: relative;
@@ -90,10 +92,6 @@ body{
   margin-top: 212px;
   margin-bottom: 212px;
   /* font-family: ; */
-}
-
-.Ostrovsky-top {
-  margin-bottom: 40px;
 }
 
 .city {
