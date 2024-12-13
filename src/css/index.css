@@ -1,7 +1,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/* @font-face {
+  font-family: 'Ostrovsky';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Ostrovsky-Bold.woff") format("woff")
+} */
+
+p {
+  margin: 0;
+}
 
 body{
-  background-color: brown;
-  color: aliceblue;
-  font-family: "Manrope";
+  background-color: #FCFCFC;
 }
+
+/* Лозунг-2 */
+
+.frame-313 {
+  display: flex;
+  width: 1527px;
+  height: 800px;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rabbit {
+  width: 755px;
+  height: 800px;
+  margin-right: 40px;
+}
+
+.frame-322 {
+  line-height: 120%;
+  color: #061538;
+  margin-top: 164px;
+  margin-bottom: 164px;
+  font-family: 'Ostrovsky', sans-serif ;
+}
+
+.Ostrovsky-top {
+  margin-bottom: 40px;
+}
+
+
+/* Преимущества-2 */
+
+.advantages-2 {
+  display: flex;
+}
+
+.frame-285 {
+  margin: 71.76px 184px 70.66px 175px;
+  color: #061538;
+  width: 611px;
+}
+
+.Ostrovsky {
+  font-size: 40px;
+}
+
+.advantages {
+  margin-top: 80px;
+  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word
+}
+
+.text-advantages {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -30px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.union {
+  width: 100%;
+}
+
+
+/* Лозунг-1 */
+
+
+.frame-323 {
+  line-height: 120%;
+  color: #061538;
+  margin-top: 212px;
+  margin-bottom: 212px;
+  /* font-family: ; */
+}
+
+.Ostrovsky-top {
+  margin-bottom: 40px;
+}
+
+.city {
+  width: 755px;
+  height: 800px;
+  margin-left: 40px;
+}
+
+/* footer */
+
+.social {
+  height: 319px;
+}
+
+.Ostrovsky {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.frame-182 {
+  width: 748px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.frame-300 {
+  width: 1524px;
+  height: 155px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.contacts {
+  width: 290px;
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-weight:600;
+  font-size:20px;
+}
+
+.Manrope-footer-2 {
+  margin-top: 20px;
+}
+
