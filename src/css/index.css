@@ -7,6 +7,17 @@
   src: url("../../fonts/Ostrovsky-Bold_0.woff2") format("woff2");
 }
 
+* {
+  box-sizing: border-box;
+  color: #061538;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
 .ostrovsky-caps {
   font-size: calc(20px + 20 * (100vw - 320px) / 1640);
   font-family: Ostrovsky;
@@ -14,159 +25,23 @@
 
 .container {
   display: flex;
-  max-width: 1440px;
+  max-width: 1840px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-p {
-  margin: 0;
-}
-
-body {
-  background-color: #fcfcfc;
+  padding: 0 40px;
 }
 
 .header-container {
   justify-content: space-between;
   align-items: center;
+  padding-block: 23px;
 }
-
-.menu-burger {
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #363333;
-}
-
-.menu {
-  position: absolute;
-  width: 900px;
-  background-color: #ffffff;
-  height: 0;
-  right: 0;
-  top: 0;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  z-index: 10;
-}
-
-.menu-active {
-  height: 471px;
-}
-
-.menu-content {
-  width: 100%;
-  height: 100%;
-}
-
-/* Заголовок */
-.menu-content h2 {
-  position: absolute;
-  top: 60px;
-  left: calc(50% - 380px);
-  width: 760px;
-  font-family: "Ostrovsky";
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 120%;
-  text-transform: uppercase;
-  text-align: center;
-  color: #061538;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* Две колонки */
-.menu-columns {
-  position: absolute;
-  top: 141px;
-  left: calc(50% - 393px);
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  width: 786px;
-  height: 268px;
-  padding-left: 21.8px;
-}
-
-.menu-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 360px;
-  line-height: 120%;
-  color: #061538;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-column-left {
-  width: 360px;
-  padding-right: 52px;
-  padding-left: 0;
-  margin: 0;
-}
-
-.menu-column-right {
-  width: 360px;
-  padding-right: 26px;
-  padding-left: 0;
-  margin: 0;
-}
-
-.menu-column-left li {
-  color: #061538;
-  padding-bottom: 20px;
-  font-size: 20px;
-  font-family: "Manrope";
-  font-weight: 500;
-}
-.menu-column-left a {
-  text-decoration: none;
-  color: #061538;
-  outline: none;
-}
-.menu-column-right a {
-  outline: none;
-  text-decoration: none;
-  color: #061538;
-}
-.menu-column-right li {
-  color: #061538;
-  padding-bottom: 20px;
-  font-size: 20px;
-  font-family: "Manrope";
-  font-weight: 500;
-}
-
-.menu-close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  cursor: pointer;
-}
-.menu::before {
-  content: "";
-  position: absolute;
-  width: 437px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #41b9ff;
-  z-index: -1;
-}
-
-/* Конец бургера */
 
 /* Лозунг-2 */
 
 .frame-313 {
   display: flex;
+  align-items: center;
   width: 1527px;
-  height: 800px;
-  font-size: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -178,11 +53,7 @@ body {
 }
 
 .frame-322 {
-  line-height: 120%;
   color: #061538;
-  margin-top: 164px;
-  margin-bottom: 164px;
-  font-family: "Ostrovsky", sans-serif;
 }
 
 .Ostrovsky-top {
@@ -192,11 +63,11 @@ body {
 /* Преимущества-2 */
 
 .advantages-2 {
-  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .frame-285 {
-  margin: 71.76px 184px 70.66px 175px;
   color: #061538;
   width: 611px;
 }
@@ -223,14 +94,6 @@ body {
 
 /* Лозунг-1 */
 
-.frame-323 {
-  line-height: 120%;
-  color: #061538;
-  margin-top: 212px;
-  margin-bottom: 212px;
-  /* font-family: ; */
-}
-
 .city {
   width: 755px;
   height: 800px;
@@ -241,9 +104,9 @@ body {
 
 .social {
   margin-block: 60px;
-    align-items: center;
-    flex-direction: column;
-    gap: 60px;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .social-networks {
