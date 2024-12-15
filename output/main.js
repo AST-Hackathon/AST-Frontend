@@ -20,13 +20,35 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/css/menu.css":
+/*!**************************!*\
+  !*** ./src/css/menu.css ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/menu.css?");
+
+/***/ }),
+
+/***/ "./src/css/snow-queen.css":
+/*!********************************!*\
+  !*** ./src/css/snow-queen.css ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/css/snow-queen.css?");
+
+/***/ }),
+
 /***/ "./src/js/burger.js":
 /*!**************************!*\
   !*** ./src/js/burger.js ***!
   \**************************/
 /***/ (() => {
 
-eval("const menuBurger = document.getElementById(\"menuBurger\");\r\nconst menu = document.getElementById(\"menu\");\r\nconst menuClose = document.getElementById(\"menuClose\");\r\n\r\nmenuBurger.addEventListener(\"click\", () => {\r\n  menu.classList.add(\"menu-active\");\r\n  menuBurger.style.display = \"none\";\r\n});\r\n\r\nmenuClose.addEventListener(\"click\", () => {\r\n  menu.classList.remove(\"menu-active\");\r\n  menuBurger.style.display = \"block\";\r\n});\r\n\n\n//# sourceURL=webpack:///./src/js/burger.js?");
+eval("const menuBurger = document.getElementById(\"menuBurger\");\r\nconst menu = document.getElementById(\"menu\");\r\nconst menuClose = document.getElementById(\"menuClose\");\r\n\r\n// Показать меню и скрыть надпись \"МЕНЮ\"\r\nmenuBurger.addEventListener(\"click\", () => {\r\n  menu.classList.add(\"menu-active\");\r\n  menuBurger.style.display = \"none\";\r\n});\r\n\r\n// Закрыть меню и вернуть надпись \"МЕНЮ\"\r\nmenuClose.addEventListener(\"click\", () => {\r\n  menu.classList.remove(\"menu-active\");\r\n  menuBurger.style.display = \"block\";\r\n});\r\n\n\n//# sourceURL=webpack:///./src/js/burger.js?");
 
 /***/ }),
 
@@ -37,7 +59,7 @@ eval("const menuBurger = document.getElementById(\"menuBurger\");\r\nconst menu 
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./burger.js */ \"./src/js/burger.js\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_burger_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_menu_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/menu.css */ \"./src/css/menu.css\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _css_snow_queen_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/snow-queen.css */ \"./src/css/snow-queen.css\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./burger.js */ \"./src/js/burger.js\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_burger_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

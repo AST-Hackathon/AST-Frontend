@@ -11,6 +11,10 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/snow-queen.html",
+      filename: "snow-queen.html",
+    }),
     new Dotenv(), // Подключение dotenv-webpack
   ],
   entry: "./src/js/index.js",
