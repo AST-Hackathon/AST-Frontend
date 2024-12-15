@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AST</title>
-  <link rel="stylesheet" href="./css/index.css">
 <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
   <header>
@@ -12,8 +11,34 @@
       <a href="#">
         <img src="../src/svg/header-logo.svg" alt="header-logo">
       </a>
+      <div class="menu-burger" id="menuBurger">МЕНЮ</div>
     </div>
+    <nav class="menu" id="menu">
+      <div class="menu-content">
+        <div class="menu-close" id="menuClose"><img src="../src/svg/close-burger.svg" class="close-burger"></div>
+        <h2>САМЫЕ УДИВИТЕЛЬНЫЕ КНИГИ:</h2>
+        <div class="menu-columns">
+          <ol class="menu-column-left">
+            <li><a href="#">Двенадцать месяцев</a></li>
+            <li><a href="#">Приключения Буратино,<br> или Золотой ключик</a></li>
+            <li><a href="#">Кошкин дом</a></li>
+            <li><a href="#">Всё о кролике Питере</a></li>
+            <li><a href="#">Алиса в Стране Чудес</a></li>
+            <li><a href="#">Сказки</a></li>
+              </ol>
+              <ol class="menu-column-right">
+                <li value="7"><a href="#">Волшебник Изумрудного города</a></li>
+                <li><a href="#">Снежная королева. Щелкунчик.<br> Госпожа Метелица</a></li>
+                <li><a href="#">Ветер в ивах</a></li>
+                <li><a href="#">Зимняя сказка</a></li>
+                <li><a href="#">Сказка о царе Салтане</a></li>
+                <li><a href="#">Алиса в Зазеркалье</a></li>
+              </ol>
+          </div>
+      </div>
+    </nav>
   </header>
+
   <main>
     <div class="slogan-2 container">
       <div class="frame-313">
@@ -59,9 +84,9 @@
   </main>
 
   <footer>
-    <div class="social">
-      <p class="Ostrovsky ostrovsky-caps">Находи новых друзей с нами</p>
-      <div class="frame-182">
+    <div class="social container">
+      <p class="ostrovsky-caps">Находи новых друзей с нами</p>
+      <div class="social-networks">
         <a href="https://vk.com/izdatelstvoast">
           <img src="../src/svg/logo-vk.svg" class="social-logo" alt="vk">
         </a>
@@ -79,19 +104,15 @@
         </a>
       </div>
     </div>
-    <div class="foot">
-      <div class="frame-300">
-        <div class="frame-299">
-          <a href="#">
-            <img src="../src/svg/footer-logo.svg" class="footer-logo" alt="logo">
-          </a>
-          <!-- <p class="Manrope-footer">Политика конфиденциальности</p> -->
-        </div>
-        <div class="contacts">
-          <p class="Manrope-footer-1">Телефон: +7 499 951-60-00,<br> добавочный 574</p>
-          <p class="Manrope-footer-2">Комментарии по работе<br> сайта — support@ast.ru</p>
-
-        </div>
+    <div class="footer-bottom container">
+      <div class="frame-299">
+        <a href="#">
+          <img src="../src/svg/footer-logo.svg" class="footer-logo" alt="logo">
+        </a>
+      </div>
+      <div class="contacts">
+        <p>Телефон: +7 499 951-60-00,<br> добавочный 574</p>
+        <p>Комментарии по работе<br> сайта — support@ast.ru</p>
       </div>
     </div>
   </footer>
