@@ -1,2 +1,4 @@
+import "../css/menu.css";
 import "../css/index.css";
-import "./burger.js"
+import "../css/snow-queen.css";
+import "./burger.js";
