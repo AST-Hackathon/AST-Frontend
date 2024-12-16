@@ -14,7 +14,6 @@
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  color: #363333;
 }
 
 .menu {
@@ -162,11 +161,18 @@ body {
   font-family: Ostrovsky;
 }
 
+.manrope{
+  font-family: Manrope;
+  font-size: calc(16px + 20 * (100vw - 320px) / 1640);
+  font-weight: bold;
+}
+
 .container {
   display: flex;
   max-width: 1840px;
   margin: 0 auto;
   padding: 0 40px;
+  margin-bottom: 40px;
 }
 
 .header-container {
@@ -175,28 +181,27 @@ body {
   padding-block: 23px;
 }
 
-/* Лозунг-2 */
+/* Лозунги */
 
-.frame-313 {
+.slogan {
   display: flex;
   align-items: center;
-  width: 1527px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1527px;
+  gap: 40px;
 }
 
-.rabbit {
-  width: 755px;
-  height: 800px;
-  margin-right: 40px;
+.slogan-2, .slogan-1 {
+  justify-content: center;
 }
 
-.frame-322 {
-  color: #061538;
+.slogan-article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.Ostrovsky-top {
-  margin-bottom: 40px;
+.rabbit, .city, .book-fragment {
+  width: 50%;
 }
 
 /* Преимущества-2 */
@@ -204,11 +209,7 @@ body {
 .advantages-2 {
   align-items: center;
   justify-content: space-around;
-}
-
-.frame-285 {
-  color: #061538;
-  width: 611px;
+  gap: 40px;
 }
 
 .advantages {
@@ -218,25 +219,24 @@ body {
   word-wrap: break-word;
 }
 
+.advantages2-article{
+  max-width: 650px;
+}
+
 .text-advantages {
   position: relative;
   z-index: 1;
   margin-bottom: -30px;
-  font-family: "Manrope", sans-serif;
-  font-weight: bold;
-  font-size: 36px;
 }
 
 .union {
   width: 100%;
 }
 
-/* Лозунг-1 */
+/* slider */
 
-.city {
-  width: 755px;
-  height: 800px;
-  margin-left: 40px;
+.winter-stories {
+  background-color: #41B9FF;
 }
 
 /* footer */
