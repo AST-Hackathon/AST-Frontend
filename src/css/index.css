@@ -43,6 +43,108 @@ body {
   padding-block: 23px;
 }
 
+/* Карусель */
+
+.title-carousels {
+  font-family: Ostrovsky;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 120%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  margin: 0;
+}
+
+.book-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.book-wrapper {
+  display: flex;
+  gap: 80px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book {
+  flex: 0 0 calc((100% / 3.5) - 80px); 
+  text-align: center;
+  overflow: hidden;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buttons {
+  z-index: 10;
+  position: absolute;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  width: 1770px;
+  padding-top: 282px;
+  padding-left: 35px;
+}
+.scroll-btn {
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+}
+
+
+
+
+
+/* Преимущества-1 */
+
+.about-book {
+  font-family: Ostrovsky;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.infographics-content {
+  display: flex;
+  padding: 60px 193px;
+}
+
+.column-left {
+  padding-right: 334px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 40px;
+}
+
+.column-left >:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+.column-right {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about-book-text {
+  display: flex;
+  gap: 24px;
+}
+
+.description-books {
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
 /* Лозунги */
 
 .slogan {
