@@ -14,3 +14,10 @@ function scrollBooks(direction) {
     }
     bookWrapper.style.transform = `translateX(-${scrollAmount}px)`;
 }
+
+document.querySelector('.left').onclick = function() {
+    scrollBooks('left');
+};
+document.querySelector('.right').onclick = function() {
+    scrollBooks('right');
+};

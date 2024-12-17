@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require("dotenv-webpack"); // Добавлено для работы с .env
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   plugins: [
@@ -16,6 +17,14 @@ module.exports = {
       filename: "snow-queen.html",
     }),
     new Dotenv(), // Подключение dotenv-webpack
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/assets'),
+          to: path.resolve(__dirname, 'output/assets')
+        }
+      ]
+    })
   ],
   entry: "./src/js/index.js",
   output: {

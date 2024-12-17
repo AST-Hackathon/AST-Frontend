@@ -52,6 +52,16 @@ eval("const menuBurger = document.getElementById(\"menuBurger\");\r\nconst menu 
 
 /***/ }),
 
+/***/ "./src/js/carousels.js":
+/*!*****************************!*\
+  !*** ./src/js/carousels.js ***!
+  \*****************************/
+/***/ (() => {
+
+eval("const bookWrapper = document.getElementById('bookWrapper');\r\nlet scrollAmount = 0;\r\nconst scrollStep = 400; // Шаг прокрутки в пикселях\r\n\r\nfunction scrollBooks(direction) {\r\n    const maxScroll = bookWrapper.scrollWidth - bookWrapper.offsetWidth;\r\n\r\n    if (direction === 'right') {\r\n        scrollAmount += scrollStep;\r\n        if (scrollAmount > maxScroll) scrollAmount = maxScroll;\r\n    } else if (direction === 'left') {\r\n        scrollAmount -= scrollStep;\r\n        if (scrollAmount < 0) scrollAmount = 0;\r\n    }\r\n    bookWrapper.style.transform = `translateX(-${scrollAmount}px)`;\r\n}\r\n\r\ndocument.querySelector('.left').onclick = function() {\r\n    scrollBooks('left');\r\n};\r\ndocument.querySelector('.right').onclick = function() {\r\n    scrollBooks('right');\r\n};\n\n//# sourceURL=webpack:///./src/js/carousels.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -59,7 +69,7 @@ eval("const menuBurger = document.getElementById(\"menuBurger\");\r\nconst menu 
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_menu_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/menu.css */ \"./src/css/menu.css\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _css_snow_queen_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/snow-queen.css */ \"./src/css/snow-queen.css\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./burger.js */ \"./src/js/burger.js\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_burger_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_menu_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/menu.css */ \"./src/css/menu.css\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _css_snow_queen_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/snow-queen.css */ \"./src/css/snow-queen.css\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./burger.js */ \"./src/js/burger.js\");\n/* harmony import */ var _burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_burger_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _carousels_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./carousels.js */ \"./src/js/carousels.js\");\n/* harmony import */ var _carousels_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_carousels_js__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

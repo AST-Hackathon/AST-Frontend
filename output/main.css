@@ -161,7 +161,7 @@ body {
   font-family: Ostrovsky;
 }
 
-.manrope{
+.manrope {
   font-family: Manrope;
   font-size: calc(16px + 20 * (100vw - 320px) / 1640);
   font-weight: bold;
@@ -181,6 +181,104 @@ body {
   padding-block: 23px;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fcfcfc;
+}
+
+.header,
+.footer-bottom {
+  box-shadow: 0px -1px 20px #06153833;
+}
+
+/* Карусель */
+
+.title-carousels {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.book-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.book-wrapper {
+  display: flex;
+  gap: 80px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book {
+  flex: 0 0 calc((100% / 3.5) - 80px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buttons {
+  z-index: 10;
+  position: absolute;
+  top: calc(50% - 50px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 35px;
+}
+
+.scroll-btn {
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+}
+
+/* Преимущества-1 */
+
+.infographics {
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.infographics-content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-evenly;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: min-content;
+  }
+}
+
+.about-book {
+  text-align: center;
+}
+
+.about-book-text {
+  display: flex;
+  gap: 24px;
+}
+
+.description-books {
+  font-family: Manrope;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
+  font-weight: bold;
+}
+
 /* Лозунги */
 
 .slogan {
@@ -190,7 +288,8 @@ body {
   gap: 40px;
 }
 
-.slogan-2, .slogan-1 {
+.slogan-2,
+.slogan-1 {
   justify-content: center;
 }
 
@@ -200,7 +299,9 @@ body {
   gap: 40px;
 }
 
-.rabbit, .city, .book-fragment {
+.rabbit,
+.city,
+.book-fragment {
   width: 50%;
 }
 
@@ -219,7 +320,7 @@ body {
   word-wrap: break-word;
 }
 
-.advantages2-article{
+.advantages2-article {
   max-width: 650px;
 }
 
@@ -236,7 +337,7 @@ body {
 /* slider */
 
 .winter-stories {
-  background-color: #41B9FF;
+  background-color: #41b9ff;
 }
 
 /* footer */
@@ -253,8 +354,10 @@ body {
   gap: 40px;
 }
 
-.footer-bottom {
+.footer-bottom-container {
   justify-content: space-between;
+  padding-block: 40px;
+  margin-bottom: 0;
 }
 
 .contacts {
@@ -285,32 +388,30 @@ body {
   outline: none;
 }
 
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+  padding-inline: 40px;
+  max-width: 1530px;
+}
+
 .description-title {
   font-family: Ostrovsky;
   font-size: 48px;
   font-weight: bold;
-  line-height: 120%;
   text-align: center;
-  padding-top: 100px;
-  margin: 0;
 }
 
 .description-content {
   display: flex;
-  padding-top: 80px;
-  padding-left: 195px;
-  padding-right: 195px;
 }
 
 .description-text {
   padding-right: 174px;
-}
-
-.title {
-  font-family: Ostrovsky;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 120%;
 }
 
 .paragraph-1 {
@@ -392,3 +493,4 @@ body {
 .rightBtn:disabled {
   cursor: not-allowed;
 }
+

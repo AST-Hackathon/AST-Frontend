@@ -16,32 +16,30 @@
   outline: none;
 }
 
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+  padding-inline: 40px;
+  max-width: 1530px;
+}
+
 .description-title {
   font-family: Ostrovsky;
   font-size: 48px;
   font-weight: bold;
-  line-height: 120%;
   text-align: center;
-  padding-top: 100px;
-  margin: 0;
 }
 
 .description-content {
   display: flex;
-  padding-top: 80px;
-  padding-left: 195px;
-  padding-right: 195px;
 }
 
 .description-text {
   padding-right: 174px;
-}
-
-.title {
-  font-family: Ostrovsky;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 120%;
 }
 
 .paragraph-1 {
