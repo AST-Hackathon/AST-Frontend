@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Ostrovsky";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/Ostrovsky-Bold_0.woff2") format("woff2");
+}
+
+.back a {
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #363333;
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+  padding-inline: 40px;
+  max-width: 1530px;
+}
+
+.description-title {
+  font-family: Ostrovsky, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-text {
+  flex: 1;
+  padding-right: 174px;
+}
+
+.paragraph-1 {
+  font-family: Manrope;
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.paragraph-2 {
+  font-family: Manrope;
+  font-size: 28px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+
+.in-store {
+  padding: 20px 40px;
+  background-color: #28ae60;
+  color: #fcfcfc;
+  border-radius: 200px;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.snowQueen {
+  flex: 1;
+  width: 100%; 
+  height: auto; 
+} 
+
+
+/* Карусель */
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1840px;
+  position: relative;
+}
+
+.gallery-wrapper {
+  width: 1840px;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+  flex: 0 0 calc(100% / 3);
+  height: auto;
+  object-fit: cover;
+}
+
+/* Стили кнопок */
+.arrow {
+  border: none;
+  margin: 10px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftBtn {
+  left: 40px;
+}
+
+.rightBtn {
+  right: 40px;
+}
+
+.leftBtn:disabled {
+  cursor: not-allowed;
+}
+.rightBtn:disabled {
+  cursor: not-allowed;
+}
