@@ -102,7 +102,16 @@ body {
   cursor: pointer;
   z-index: 10;
   background: none;
+  position: absolute;
 }
+
+.scroll-btn.left {
+  left: 75px;
+}
+.scroll-btn.right {
+  right: 75px;
+}
+
 
 /* Преимущества-1 */
 
@@ -110,21 +119,28 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-top: 60px;
+  width: 90%; 
+  margin: 0 auto; 
 }
 
 .infographics-content {
   display: flex;
   gap: 40px;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap; 
 
   .column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    width: min-content;
+    width: calc(50% - 20px);
+    margin-top: 60px; 
+    max-width: 50%;
+    
   }
 }
+
 
 .about-book {
   text-align: center;
@@ -133,13 +149,18 @@ body {
 .about-book-text {
   display: flex;
   gap: 24px;
+  align-items: center; 
 }
+
 
 .description-books {
   font-family: Manrope;
-  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
+  font-size: 1rem; 
   font-weight: bold;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
 }
+
+
 
 /* Лозунги */
 
