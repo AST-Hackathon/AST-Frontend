@@ -154,8 +154,7 @@ body {
 
 
 .description-books {
-  font-family: Manrope;
-  font-size: 1rem; 
+  font-family: Manrope; 
   font-weight: bold;
   font-size: calc(16px + 16 * (100vw - 320px) / 1640);
 }
