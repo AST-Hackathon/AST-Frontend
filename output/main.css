@@ -2,9 +2,9 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
   \*********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/snow-queen.css ***!
-  \**************************************************************************/
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fairytale-page.css ***!
+  \******************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
 /*!********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/menu.css ***!
@@ -279,6 +279,63 @@ body {
   font-weight: bold;
 }
 
+/* Слайдер */
+
+.slider {
+  position: relative;
+}
+
+.slide-container {
+  height: 800px;
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1520px;
+
+  .slider-arrows {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+/* Слайд зимняя сказка */
+
+.winter-stories-new {
+  color: #ffffff;
+  padding: 0 10px 8px 14px;
+  border: 3px solid white;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.winter-stories-content {
+  display: flex;
+}
+
+.winter-stories-text {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-top: 100px;
+}
+
+.winter-stories-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: -20px;
+}
+
+.winter-stories-image {
+  display: flex;
+  align-items: center;
+}
+
 /* Лозунги */
 
 .slogan {
@@ -369,9 +426,9 @@ body {
   justify-content: space-around;
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/snow-queen.css (1) ***!
-  \******************************************************************************/
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fairytale-page.css (1) ***!
+  \**********************************************************************************/
 @font-face {
   font-family: "Ostrovsky";
   font-style: normal;
