@@ -107,9 +107,11 @@ body {
 
 .scroll-btn.left {
   left: 75px;
+  display: block;
 }
 .scroll-btn.right {
   right: 75px;
+  display: block;
 }
 
 /* Преимущества-1 */
