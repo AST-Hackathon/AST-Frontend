@@ -112,22 +112,20 @@ body {
   right: 75px;
 }
 
-
 /* Преимущества-1 */
 
 .infographics {
   flex-direction: column;
   gap: 40px;
   margin-top: 60px;
-  width: 90%; 
-  margin: 0 auto; 
+  width: 90%;
 }
 
 .infographics-content {
   display: flex;
   gap: 40px;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 
   .column {
     display: flex;
@@ -135,12 +133,10 @@ body {
     justify-content: space-between;
     gap: 20px;
     width: calc(50% - 20px);
-    margin-top: 60px; 
+    margin-top: 60px;
     max-width: 50%;
-    
   }
 }
-
 
 .about-book {
   text-align: center;
@@ -149,16 +145,14 @@ body {
 .about-book-text {
   display: flex;
   gap: 24px;
-  align-items: center; 
+  align-items: center;
 }
 
-
 .description-books {
-  font-family: Manrope; 
+  font-family: Manrope;
   font-weight: bold;
   font-size: calc(16px + 16 * (100vw - 320px) / 1640);
 }
-
 
 /* Слайдер */
 
@@ -168,22 +162,49 @@ body {
 
 .slide-container {
   height: 800px;
+  position: relative;
+  max-width: 1600px;
+}
+
+.slider-btn-container {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .slider-buttons {
-  position: absolute;
-  bottom: 120px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  max-width: 1520px;
+  align-items: center;
+  gap: 60px;
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
 
-  .slider-arrows {
-    display: flex;
-    gap: 15px;
+  .shop {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+
   }
 }
 
+.slider-arrows {
+  display: flex;
+  gap: 15px;
+  max-height: 50px;
+
+  img {
+    cursor: pointer;
+  }
+}
 /* Слайд зимняя сказка */
 
 .winter-stories-new {
@@ -215,6 +236,30 @@ body {
 .winter-stories-image {
   display: flex;
   align-items: center;
+}
+
+/* баннер 5 лет */
+
+.jubilee-banner-outside-container {
+  position: relative;
+}
+
+.jubilee-banner {
+  background-color: #427143;
+
+  .confetti {
+    position: absolute;
+  }
+
+  .confetti-top {
+    top: 0;
+    left: 0;
+  }
+
+  .confetti-bottom {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* Лозунги */
