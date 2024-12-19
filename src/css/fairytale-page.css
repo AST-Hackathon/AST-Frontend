@@ -8,25 +8,18 @@
 }
 
 .back a {
-  font-size: 40px;
-  font-weight: bold;
   cursor: pointer;
-  color: #363333;
   text-decoration: none;
   outline: none;
 }
 
-
-
 .description {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 80px;
   margin: 0 auto;
-  padding-inline: 40px;
-  max-width: 1530px;
+  max-width: 1610px;
+  padding: 100px 40px;
 }
 
 .description-title {
@@ -38,29 +31,20 @@
 
 .description-content {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  /* flex-wrap: wrap; -это лучше вставить когда размер экрана будет ~1300*/
+  justify-content: space-between;
 }
 
 .description-text {
+  display: flex;
   flex: 1;
-  padding-right: 174px;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
 }
 
-.paragraph-1 {
-  font-family: Manrope;
-  font-size: 36px;
+.description-paragraph {
   font-weight: 400;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.paragraph-2 {
-  font-family: Manrope;
-  font-size: 28px;
-  font-weight: 400;
-  padding-bottom: 40px;
 }
 
 .in-store {
@@ -74,17 +58,25 @@
   font-family: Manrope, sans-serif;
   font-weight: 400;
   text-align: center;
-
 }
 
-.snowQueen {
+.description-image {
   flex: 1;
-  width: 100%; 
-  height: auto; 
-} 
+  width: 100%;
+  height: auto;
+  max-width: 755px;
+}
 
+/* Карусель с фотографиями из книги */
+
+.books-images {
+  background-image: url("../assets/png/fairytale-carousel-bg.jpg");
+  width: 100%;
+  background-size: cover;
+}
 
 /* Карусель */
+
 .gallery-content {
   display: flex;
   align-items: center;
