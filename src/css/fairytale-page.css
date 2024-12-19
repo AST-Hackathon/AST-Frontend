@@ -16,6 +16,8 @@
   outline: none;
 }
 
+
+
 .description {
   padding-top: 100px;
   display: flex;
@@ -28,7 +30,7 @@
 }
 
 .description-title {
-  font-family: Ostrovsky;
+  font-family: Ostrovsky, sans-serif;
   font-size: 48px;
   font-weight: bold;
   text-align: center;
@@ -36,9 +38,13 @@
 
 .description-content {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .description-text {
+  flex: 1;
   padding-right: 174px;
 }
 
@@ -65,9 +71,18 @@
   border: none;
   cursor: pointer;
   font-size: 32px;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 400;
+  text-align: center;
+
 }
+
+.snowQueen {
+  flex: 1;
+  width: 100%; 
+  height: auto; 
+} 
+
 
 /* Карусель */
 .gallery-content {
