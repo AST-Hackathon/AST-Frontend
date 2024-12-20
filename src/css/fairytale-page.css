@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+  font-family: "Ostrovsky";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/Ostrovsky-Bold_0.woff2") format("woff2");
+}
+
+.back a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 0 auto;
+  max-width: 1610px;
+  padding: 100px 40px;
+}
+
+.description-title {
+  font-family: Ostrovsky, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description-content {
+  display: flex;
+  /* flex-wrap: wrap; -это лучше вставить когда размер экрана будет ~1300*/
+  justify-content: space-between;
+}
+
+.description-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
+}
+
+.description-paragraph {
+  font-weight: 400;
+}
+
+.in-store {
+  padding: 20px 40px;
+  background-color: #28ae60;
+  color: #fcfcfc;
+  border-radius: 200px;
+  border: none;
+  cursor: pointer;
+  font-size: 32px;
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.description-image {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  max-width: 755px;
+}
+/* Карусель с синим фоном */
+
+.queen-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 256px;
+}
+
+.paper-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/svg/carousel-arrows/background-blue.svg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  z-index: -1; 
+}
+
+.gallery-slaid {
+  position: relative; 
+  overflow: hidden; 
+  width: 100%; 
+  height: 1113px; 
+}
+
+.books-slaider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book-slaid {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.book-slaid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+/* Карусель с фотографиями из книги */
+
+.books-images {
+  background-image: url("../assets/png/fairytale-carousel-bg.jpg");
+  width: 100%;
+  background-size: cover;
+}
+
+/* Карусель */
+
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1840px;
+  position: relative;
+}
+
+.gallery-wrapper {
+  width: 1840px;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+  flex: 0 0 calc(100% / 3);
+  height: auto;
+  object-fit: cover;
+}
+
+/* Стили кнопок */
+.arrow {
+  border: none;
+  margin: 10px 15px;
+  border-radius: 100px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftBtn {
+  left: 40px;
+}
+
+.rightBtn {
+  right: 40px;
+}
+
+.leftBtn:disabled {
+  cursor: not-allowed;
+}
+.rightBtn:disabled {
+  cursor: not-allowed;
+}

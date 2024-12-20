@@ -2,9 +2,9 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
   \*********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/snow-queen.css ***!
-  \**************************************************************************/
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fairytale-page.css ***!
+  \******************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap);
 /*!********************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/menu.css ***!
@@ -161,7 +161,7 @@ body {
   font-family: Ostrovsky;
 }
 
-.manrope{
+.manrope {
   font-family: Manrope;
   font-size: calc(16px + 20 * (100vw - 320px) / 1640);
   font-weight: bold;
@@ -181,6 +181,225 @@ body {
   padding-block: 23px;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fcfcfc;
+}
+
+.header,
+.footer-bottom {
+  box-shadow: 0px -1px 20px #06153833;
+}
+
+/* Карусель */
+
+.title-carousels {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.book-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.book-wrapper {
+  display: flex;
+  gap: 80px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book {
+  flex: 0 0 calc((100% / 3.5) - 80px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.buttons {
+  z-index: 10;
+  position: absolute;
+  top: calc(50% - 50px);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 35px;
+}
+
+.scroll-btn {
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background: none;
+  position: absolute;
+}
+
+.scroll-btn.left {
+  left: 75px;
+}
+.scroll-btn.right {
+  right: 75px;
+}
+
+/* Преимущества-1 */
+
+.infographics {
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 60px;
+  width: 90%;
+}
+
+.infographics-content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: calc(50% - 20px);
+    margin-top: 60px;
+    max-width: 50%;
+  }
+}
+
+.about-book {
+  text-align: center;
+}
+
+.about-book-text {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.description-books {
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
+}
+
+/* Слайдер */
+
+.slider {
+  position: relative;
+}
+
+.slide-container {
+  height: 800px;
+  position: relative;
+  max-width: 1600px;
+}
+
+.slider-btn-container {
+  position: absolute;
+  max-width: 1600px;
+  width: 100%;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.slider-buttons {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: calc(16px + 16 * (100vw - 320px) / 1640);
+
+  .shop {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+
+  }
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 15px;
+  max-height: 50px;
+
+  img {
+    cursor: pointer;
+  }
+}
+/* Слайд зимняя сказка */
+
+.winter-stories-new {
+  color: #ffffff;
+  padding: 0 10px 8px 14px;
+  border: 3px solid white;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.winter-stories-content {
+  display: flex;
+}
+
+.winter-stories-text {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-top: 100px;
+}
+
+.winter-stories-description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-right: -20px;
+}
+
+.winter-stories-image {
+  display: flex;
+  align-items: center;
+}
+
+/* баннер 5 лет */
+
+.jubilee-banner-outside-container {
+  position: relative;
+}
+
+.jubilee-banner {
+  background-color: #427143;
+
+  .confetti {
+    position: absolute;
+  }
+
+  .confetti-top {
+    top: 0;
+    left: 0;
+  }
+
+  .confetti-bottom {
+    bottom: 0;
+    right: 0;
+  }
+}
+
 /* Лозунги */
 
 .slogan {
@@ -190,7 +409,8 @@ body {
   gap: 40px;
 }
 
-.slogan-2, .slogan-1 {
+.slogan-2,
+.slogan-1 {
   justify-content: center;
 }
 
@@ -200,7 +420,9 @@ body {
   gap: 40px;
 }
 
-.rabbit, .city, .book-fragment {
+.rabbit,
+.city,
+.book-fragment {
   width: 50%;
 }
 
@@ -219,7 +441,7 @@ body {
   word-wrap: break-word;
 }
 
-.advantages2-article{
+.advantages2-article {
   max-width: 650px;
 }
 
@@ -236,7 +458,7 @@ body {
 /* slider */
 
 .winter-stories {
-  background-color: #41B9FF;
+  background-color: #41b9ff;
 }
 
 /* footer */
@@ -253,8 +475,10 @@ body {
   gap: 40px;
 }
 
-.footer-bottom {
+.footer-bottom-container {
   justify-content: space-between;
+  padding-block: 40px;
+  margin-bottom: 0;
 }
 
 .contacts {
@@ -266,9 +490,9 @@ body {
   justify-content: space-around;
 }
 
-/*!******************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/snow-queen.css (1) ***!
-  \******************************************************************************/
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/fairytale-page.css (1) ***!
+  \**********************************************************************************/
 @font-face {
   font-family: "Ostrovsky";
   font-style: normal;
@@ -277,55 +501,43 @@ body {
 }
 
 .back a {
-  font-size: 40px;
-  font-weight: bold;
   cursor: pointer;
-  color: #363333;
   text-decoration: none;
   outline: none;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 0 auto;
+  max-width: 1610px;
+  padding: 100px 40px;
+}
+
 .description-title {
-  font-family: Ostrovsky;
+  font-family: Ostrovsky, sans-serif;
   font-size: 48px;
   font-weight: bold;
-  line-height: 120%;
   text-align: center;
-  padding-top: 100px;
-  margin: 0;
 }
 
 .description-content {
   display: flex;
-  padding-top: 80px;
-  padding-left: 195px;
-  padding-right: 195px;
+  /* flex-wrap: wrap; -это лучше вставить когда размер экрана будет ~1300*/
+  justify-content: space-between;
 }
 
 .description-text {
-  padding-right: 174px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 600px;
 }
 
-.title {
-  font-family: Ostrovsky;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 120%;
-}
-
-.paragraph-1 {
-  font-family: Manrope;
-  font-size: 36px;
+.description-paragraph {
   font-weight: 400;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.paragraph-2 {
-  font-family: Manrope;
-  font-size: 28px;
-  font-weight: 400;
-  padding-bottom: 40px;
 }
 
 .in-store {
@@ -336,11 +548,28 @@ body {
   border: none;
   cursor: pointer;
   font-size: 32px;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-weight: 400;
+  text-align: center;
+}
+
+.description-image {
+  flex: 1;
+  width: 100%;
+  height: auto;
+  max-width: 755px;
+}
+
+/* Карусель с фотографиями из книги */
+
+.books-images {
+  background-image: url(6929265cd9e7c9a94302.jpg);
+  width: 100%;
+  background-size: cover;
 }
 
 /* Карусель */
+
 .gallery-content {
   display: flex;
   align-items: center;
@@ -392,3 +621,4 @@ body {
 .rightBtn:disabled {
   cursor: not-allowed;
 }
+
