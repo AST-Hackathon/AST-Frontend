@@ -81,7 +81,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/svg/carousel-arrows/background-blue.svg");
+  background-image: url("../assets/svg/carousel-arrows/background-blue.svg");
   background-size: cover; 
   background-repeat: no-repeat; 
   z-index: -1; 
@@ -111,16 +111,6 @@
   width: 100%;
   height: 100%;
   display: block;
-}
-
-
-
-/* Карусель с фотографиями из книги */
-
-.books-images {
-  background-image: url("../assets/png/fairytale-carousel-bg.jpg");
-  width: 100%;
-  background-size: cover;
 }
 
 /* Карусель */

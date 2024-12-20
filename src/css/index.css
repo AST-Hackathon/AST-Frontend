@@ -194,7 +194,6 @@ body {
     padding: 20px 40px;
     border-radius: 100px;
     text-decoration: none;
-
   }
 }
 
@@ -261,6 +260,30 @@ body {
   .confetti-bottom {
     bottom: 0;
     right: 0;
+  }
+}
+
+
+.jubilee-banner-content{
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+
+  .jubilee-banner-text {
+    display: flex;
+    flex-direction: column;
+    
+
+    .jubilee-banner-title {
+      font: 600 110px Ostrovsky;
+      color: #fcfcfc;
+    }
+
+    .jubilee-banner-description {
+      font: 600 32px Ostrovsky;
+      color: #fcfcfc;
+      
+    }
   }
 }
 
@@ -343,13 +366,21 @@ body {
   justify-content: space-between;
   padding-block: 40px;
   margin-bottom: 0;
-}
 
-.contacts {
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  .footer-logo-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: 500 20px Manrope;
+  }
+
+  .contacts {
+    font: 600 24px Manrope;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+    }
+  }
 }

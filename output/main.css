@@ -245,9 +245,11 @@ body {
 
 .scroll-btn.left {
   left: 75px;
+  display: block;
 }
 .scroll-btn.right {
   right: 75px;
+  display: block;
 }
 
 /* Преимущества-1 */
@@ -330,7 +332,6 @@ body {
     padding: 20px 40px;
     border-radius: 100px;
     text-decoration: none;
-
   }
 }
 
@@ -397,6 +398,30 @@ body {
   .confetti-bottom {
     bottom: 0;
     right: 0;
+  }
+}
+
+
+.jubilee-banner-content{
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+
+  .jubilee-banner-text {
+    display: flex;
+    flex-direction: column;
+    
+
+    .jubilee-banner-title {
+      font: 600 110px Ostrovsky;
+      color: #fcfcfc;
+    }
+
+    .jubilee-banner-description {
+      font: 600 32px Ostrovsky;
+      color: #fcfcfc;
+      
+    }
   }
 }
 
@@ -479,15 +504,23 @@ body {
   justify-content: space-between;
   padding-block: 40px;
   margin-bottom: 0;
-}
 
-.contacts {
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  .footer-logo-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: 500 20px Manrope;
+  }
+
+  .contacts {
+    font: 600 24px Manrope;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 /*!**********************************************************************************!*\
@@ -559,13 +592,51 @@ body {
   height: auto;
   max-width: 755px;
 }
+/* Карусель с синим фоном */
 
-/* Карусель с фотографиями из книги */
+.queen-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 256px;
+}
 
-.books-images {
-  background-image: url(6929265cd9e7c9a94302.jpg);
+.paper-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-size: cover;
+  height: 100%;
+  background-image: url(cafe030e496722f78be7.svg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  z-index: -1; 
+}
+
+.gallery-slaid {
+  position: relative; 
+  overflow: hidden; 
+  width: 100%; 
+  height: 1113px; 
+}
+
+.books-slaider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book-slaid {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.book-slaid img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Карусель */
