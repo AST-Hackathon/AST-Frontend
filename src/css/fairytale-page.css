@@ -66,6 +66,54 @@
   height: auto;
   max-width: 755px;
 }
+/* Карусель с синим фоном */
+
+.queen-container {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 256px;
+}
+
+.paper-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/svg/carousel-arrows/background-blue.svg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  z-index: -1; 
+}
+
+.gallery-slaid {
+  position: relative; 
+  overflow: hidden; 
+  width: 100%; 
+  height: 1113px; 
+}
+
+.books-slaider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.book-slaid {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.book-slaid img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
 
 /* Карусель с фотографиями из книги */
 
