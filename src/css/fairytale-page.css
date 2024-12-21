@@ -185,11 +185,13 @@
   display: flex;
 }
 
-.book-wrapper {
+.book-wrapper.withReviews {
   display: flex;
   gap: 20px;
   transition: transform 0.5s ease-in-out;
-  width: fit-content;
+  /* width: fit-content; */
+  min-width: 1530px;
+  overflow: hidden;
 }
 
 .review {
@@ -204,22 +206,30 @@
   padding-top: 40px;
 }
 
-.btnReview {
+.reviewBtn {
   cursor: pointer;
-  /* z-index: 2; */
   border: none;
   background: none;
 }
 
-.right.btnReview {
-  display: block;
-  padding-right: 75px;
-}
-
-.left.btnReview{
+.scroll-btn.left.reviewBtn {
   display: block;
   padding-left: 75px;
   padding-right: 20px;
+  left: 0;
+  right: 0;
+}
+
+.scroll-btn.right.reviewBtn{
+  display: block;
+  padding-right: 75px;
+  left: 0;
+  right: 0;
+}
+
+.scroll-btn.reviewBtn {
+  position: relative;
+  display: block;
 }
 
 
