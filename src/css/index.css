@@ -55,6 +55,14 @@ body {
   box-shadow: 0px -1px 20px #06153833;
 }
 
+/* hero */ 
+
+.hero-container {
+  img {
+    max-width: 100%;
+  }
+}
+
 /* Карусель */
 
 .title-carousels {
@@ -194,7 +202,6 @@ body {
     padding: 20px 40px;
     border-radius: 100px;
     text-decoration: none;
-
   }
 }
 
@@ -208,6 +215,10 @@ body {
   }
 }
 /* Слайд зимняя сказка */
+
+.winter-stories {
+  background-color: #41b9ff;
+}
 
 .winter-stories-new {
   color: #ffffff;
@@ -244,6 +255,7 @@ body {
 
 .jubilee-banner-outside-container {
   position: relative;
+  justify-content: center;
 }
 
 .jubilee-banner {
@@ -261,6 +273,34 @@ body {
   .confetti-bottom {
     bottom: 0;
     right: 0;
+  }
+}
+
+.jubilee-banner-conteiner {
+  max-width: 1525px;
+}
+
+.jubilee-banner-content{
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 70px;
+
+  .jubilee-banner-text {
+    display: flex;
+    flex-direction: column;
+    
+
+    .jubilee-banner-title {
+      font: 600 110px Ostrovsky;
+      color: #fcfcfc;
+    }
+
+    .jubilee-banner-description {
+      font: 600 32px Ostrovsky;
+      color: #fcfcfc;
+      
+    }
   }
 }
 
@@ -290,6 +330,12 @@ body {
   width: 50%;
 }
 
+.slogan-2 {
+  .article-top {
+    max-width: 680px;
+  }
+}
+
 /* Преимущества-2 */
 
 .advantages-2 {
@@ -301,28 +347,18 @@ body {
 .advantages {
   margin-top: 80px;
   position: relative;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .advantages2-article {
-  max-width: 650px;
+  max-width: 640px;
 }
 
-.text-advantages {
-  position: relative;
-  z-index: 1;
-  margin-bottom: -30px;
-}
-
-.union {
-  width: 100%;
-}
-
-/* slider */
-
-.winter-stories {
-  background-color: #41b9ff;
+.group-advantages {
+  display: flex;
+  gap: 20px;
 }
 
 /* footer */
@@ -343,13 +379,21 @@ body {
   justify-content: space-between;
   padding-block: 40px;
   margin-bottom: 0;
-}
 
-.contacts {
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  .footer-logo-policy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font: 500 20px Manrope;
+  }
+
+  .contacts {
+    font: 600 24px Manrope;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+    }
+  }
 }
