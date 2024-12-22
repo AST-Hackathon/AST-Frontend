@@ -6,16 +6,18 @@
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 900px;
   background-color: #ffffff;
   height: 0;
-  right: 0;
-  top: 0;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   overflow: hidden;
   transition: height 0.4s ease;
   z-index: 10;
 }
+
 
 .menu-active {
   height: 471px;

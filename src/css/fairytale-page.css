@@ -210,6 +210,12 @@
   display: block;
 }
 
+.buttons.center {
+  top: 50%;
+}
+
+
+
 /* Карусель с отзывами */
 
 
@@ -217,10 +223,10 @@
   position: relative;
   border-radius: 30px;
   padding: 20px 30px;
-  /* z-index: 1;  */
   flex: 0 0 calc((100% / 3) - 40px);
   width: 445px;
   height: 250px;
+  overflow: hidden;
 }
 
 .review::before {
@@ -235,7 +241,6 @@
   background: linear-gradient(to top right, #28AE60, #28AEA1, #41B9FF);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
-  /* z-index: -1;  */
 }
 
 .title-carousels.rev {
@@ -274,7 +279,6 @@
 
 .book-container.reviews {
   position: relative; 
-  overflow: hidden; 
   display: flex;
   align-items: center;
 }
@@ -284,7 +288,6 @@
   gap: 20px;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
-  overflow: hidden;
   width: 100%;
   position: relative;
 }
@@ -299,18 +302,21 @@
 .btn-review {
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .reviewBtn {
   cursor: pointer;
   border: none;
-  background: none;
+  background: #FCFCFC; 
 }
 
 .leftBtn {
   display: block;
   padding-left: 75px;
   padding-right: 20px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   left: 0;
   right: 0;
   z-index: 10;
@@ -320,17 +326,18 @@
   display: block;
   padding-right: 75px;
   padding-left: 20px;
-  left: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
   right: 0;
-  z-index: 10;
+  z-index: 15;
+  position: absolute;
 }
-
 
 
 
 /* Карусель */
 
-.gallery-content {
+/* .gallery-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,7 +362,7 @@
   object-fit: cover;
 } 
 
-/* Стили кнопок */
+
 .arrow {
   border: none;
   margin: 10px 15px;
@@ -380,4 +387,4 @@
 }
 .rightBtn:disabled {
   cursor: not-allowed;
-}
+} */
