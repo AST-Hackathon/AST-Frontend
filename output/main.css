@@ -17,16 +17,18 @@
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 900px;
   background-color: #ffffff;
   height: 0;
-  right: 0;
-  top: 0;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
   overflow: hidden;
   transition: height 0.4s ease;
   z-index: 10;
 }
+
 
 .menu-active {
   height: 471px;
@@ -405,7 +407,7 @@ body {
 
 /* баннер 5 лет */
 
-.jubilee-banner-outside-container {
+.jb-outside-container {
   position: relative;
   justify-content: center;
   max-width: 1920px;
@@ -429,28 +431,28 @@ body {
   }
 }
 
-.jubilee-banner-container {
+.jb-container {
   max-width: 1525px;
   width: 100%;
 }
 
-.jubilee-banner-content {
+.jb-content {
   display: flex;
   align-items: flex-start;
   gap: 50px;
   padding-top: 70px;
 
-  .jubilee-banner-text {
+  .jb-text {
     display: flex;
     flex-direction: column;
     max-width: 650px;
 
-    .jubilee-banner-title {
+    .jb-title {
       font: 600 110px Ostrovsky;
       color: #fcfcfc;
     }
 
-    .jubilee-banner-description {
+    .jb-description {
       font: 600 32px Ostrovsky;
       color: #fcfcfc;
       line-height: 50px;
@@ -460,11 +462,22 @@ body {
 
 .jb-images {
   display: flex;
-  align-items: end;
+  align-items: baseline;
   justify-content: end;
   gap: 30px;
-  margin-top: -70px;
-  margin-left: 50px;
+  margin-top: -250px;
+
+  .jb-image22{
+    margin-left: -10px;
+  }
+  .jb-image23{
+    padding-bottom: 75px;
+    margin-left: -12px;
+  }
+  .jb-image24 {
+    padding-bottom: 200px;
+    margin-left: -7px;
+  }
 }
 
 /* Лозунги */
@@ -638,7 +651,7 @@ body {
   position: relative;
   margin: 0 auto;
   padding-top: 256px;
-  height: 1113px; 
+  height: 1113px;
   width: 100%;
 }
 
@@ -647,12 +660,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .book-container.queeny {
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
   /* width: calc(600px * 3 + 1px * 2);  */
   /* height: 1113px;  */
 }
@@ -681,12 +694,10 @@ body {
 /* .book-container.queeny .book-wrapper {
   width: calc(600px * 5 + 20px * 4);
 } */
- 
-
 
 /* Карусель с авторами */
 
-.carousels{
+.carousels {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -699,8 +710,6 @@ body {
   transition: transform 0.5s ease-in-out;
   width: fit-content;
 }
-
-
 
 .photos-authors {
   display: flex;
@@ -727,7 +736,7 @@ body {
 }
 
 .book.author {
-  overflow:visible;
+  overflow: visible;
   flex: auto;
   flex: 0 0 auto;
 }
@@ -737,7 +746,6 @@ body {
   height: 100%;
   display: block;
 }
-
 
 .info-illustrator {
   display: flex;
@@ -774,32 +782,34 @@ body {
   display: block;
 }
 
-/* Карусель с отзывами */
+.buttons.center {
+  top: 50%;
+}
 
+/* Карусель с отзывами */
 
 .review {
   position: relative;
   border-radius: 30px;
   padding: 20px 30px;
-  /* z-index: 1;  */
   flex: 0 0 calc((100% / 3) - 40px);
   width: 445px;
   height: 250px;
+  overflow: hidden;
 }
 
 .review::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  padding: 2px; 
-  background: linear-gradient(to top right, #28AE60, #28AEA1, #41B9FF);
+  padding: 2px;
+  background: linear-gradient(to top right, #28ae60, #28aea1, #41b9ff);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
-  /* z-index: -1;  */
 }
 
 .title-carousels.rev {
@@ -818,27 +828,24 @@ body {
 }
 .text-review {
   font-family: Manrope;
-  font-size: 32px;
-  font-weight: 400;
-  color: #061538;
+  font-size: 30px;
   line-height: 120%;
 }
 
 .text-review.fire:after {
-  content: '\1F525''\1F525';
+  content: "\1F525""\1F525";
 }
 
 .carousels-reviews {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  height: 616px; 
+  height: 616px;
   width: 100%;
 }
 
 .book-container.reviews {
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -848,7 +855,6 @@ body {
   gap: 20px;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
-  overflow: hidden;
   width: 100%;
   position: relative;
 }
@@ -859,42 +865,43 @@ body {
   height: 250px;
 }
 
-
 .btn-review {
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .reviewBtn {
   cursor: pointer;
   border: none;
-  background: none;
+  background: #fcfcfc;
 }
 
 .leftBtn {
   display: block;
   padding-left: 75px;
   padding-right: 20px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   left: 0;
   right: 0;
   z-index: 10;
 }
 
-.rightBtn{
+.rightBtn {
   display: block;
   padding-right: 75px;
   padding-left: 20px;
-  left: 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
   right: 0;
-  z-index: 10;
+  z-index: 15;
+  position: absolute;
 }
-
-
-
 
 /* Карусель */
 
-.gallery-content {
+/* .gallery-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -919,7 +926,7 @@ body {
   object-fit: cover;
 } 
 
-/* Стили кнопок */
+
 .arrow {
   border: none;
   margin: 10px 15px;
@@ -944,5 +951,5 @@ body {
 }
 .rightBtn:disabled {
   cursor: not-allowed;
-}
+} */
 
