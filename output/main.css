@@ -280,16 +280,20 @@ body {
   .column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    width: calc(50% - 20px);
+    justify-content: center;
+    gap: 40px;
     margin-top: 60px;
     max-width: 50%;
+    max-width: 650px;
+
+    &.left {
+      max-height: 700px;
+    }
   }
 }
 
 .about-book {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .about-book-text {
@@ -362,10 +366,27 @@ body {
   gap: 15px;
   max-height: 50px;
 
-  img {
+  .slider-left{
     cursor: pointer;
-    
+    &:hover {
+      path {
+        
+        fill: #061538;
+      }
+    }
   }
+  .slider-right {
+    cursor: pointer;
+    &:hover {
+      path {
+        stroke: #061538;
+        &.arrow{
+          fill: #061538;
+        }
+      }
+    }
+  }
+  
 }
 
 /* Слайд зимняя сказка */
@@ -467,10 +488,10 @@ body {
   gap: 30px;
   margin-top: -250px;
 
-  .jb-image22{
+  .jb-image22 {
     margin-left: -10px;
   }
-  .jb-image23{
+  .jb-image23 {
     padding-bottom: 75px;
     margin-left: -12px;
   }
