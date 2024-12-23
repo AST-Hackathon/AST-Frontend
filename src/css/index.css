@@ -75,12 +75,14 @@ body {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  
 }
 
 .book-wrapper {
   display: flex;
   gap: 80px;
   transition: transform 0.5s ease-in-out;
+  
 }
 
 .book {
@@ -105,13 +107,13 @@ body {
   padding-inline: 35px;
 }
 
-.scroll-btn {
+/* .scroll-btn {
   border: none;
   cursor: pointer;
   z-index: 10;
   background: none;
   position: absolute;
-}
+} */
 
 .scroll-btn.left {
   left: 75px;
@@ -122,6 +124,33 @@ body {
   display: block;
 }
 
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.svg-icon {
+  width: 100px;
+  height: 100px;
+  transition: filter 0.2s ease; /* Плавный переход цвета */
+}
+.scroll-btn:hover .circle {
+  fill: #28AE60; 
+}
+
+.scroll-btn:hover .arrow {
+  fill: #FFFFFF; /* Стрелка становится белой */
+}
 /* Преимущества-1 */
 
 .infographics {
@@ -140,16 +169,20 @@ body {
   .column {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    width: calc(50% - 20px);
+    justify-content: center;
+    gap: 40px;
     margin-top: 60px;
     max-width: 50%;
+    max-width: 650px;
+
+    &.left {
+      max-height: 700px;
+    }
   }
 }
 
 .about-book {
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .about-book-text {
@@ -222,10 +255,27 @@ body {
   gap: 15px;
   max-height: 50px;
 
-  img {
+  .slider-left{
     cursor: pointer;
-    
+    &:hover {
+      path {
+        
+        fill: #061538;
+      }
+    }
   }
+  .slider-right {
+    cursor: pointer;
+    &:hover {
+      path {
+        stroke: #061538;
+        &.arrow{
+          fill: #061538;
+        }
+      }
+    }
+  }
+  
 }
 
 /* Слайд зимняя сказка */
@@ -327,10 +377,10 @@ body {
   gap: 30px;
   margin-top: -250px;
 
-  .jb-image22{
+  .jb-image22 {
     margin-left: -10px;
   }
-  .jb-image23{
+  .jb-image23 {
     padding-bottom: 75px;
     margin-left: -12px;
   }

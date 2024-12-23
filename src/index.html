@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AST</title>
+  <link rel="stylesheet" href="./css/fairytale-page.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/menu.css">
 </head>
 <body>
   <header class="header">
@@ -61,30 +64,47 @@
             <div class="book"><a href="#"><img src="./assets/png/ветер в ивах.png" alt="Книга 12"></a></div>
         </div>
         <div class="buttons">
-          <button class="scroll-btn left"><img src="./assets/svg/carousel-arrows/btn-left.svg"></button>
-          <button class="scroll-btn right"><img src="./assets/svg/carousel-arrows/btn-right.svg"></button>
+          <button class="scroll-btn left"><svg
+            class="svg-icon"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="#none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle class="circle" cx="50" cy="50" r="50" fill="#FFFFFF" />
+            <path
+                class="arrow"
+                d="M57.7334 21.4674L59.4668 25.2674L36.6002 48.1342L59.4668 70.0008L57.7334 73.8008L29.0668 48.1342L57.7334 21.4674Z"
+                fill="#28AE60"
+            />
+        </svg></button>
+          <button class="scroll-btn right"><svg
+            class="svg-icon"
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="circle" cx="50" cy="50" r="50" fill="#FFFFFF" />
+            <path
+              class="arrow"
+              d="M42.2666 78.5326L40.5332 74.7326L63.3998 51.8658L40.5332 29.9992L42.2666 26.1992L70.9332 51.8658L42.2666 78.5326Z"
+              fill="#28AE60"
+            />
+          </svg>
+        </button>
           </div>
     </div>
     </div>
     <div class="infographics container">
-      <p class="about-book ostrovsky-caps">О КНИГАХ НАШЕЙ СЕРИИ</p>
       <div class="infographics-content ">
-        <div class="column">
+        <div class="column left">
+          <p class="about-book ostrovsky-caps">О КНИГАХ НАШЕЙ СЕРИИ</p>
           <div class="about-book-text">
             <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
-            <p class="description-books">тексты классических сказок адаптированы для маленьких читателей</p>
-          </div>
-          <div class="about-book-text">
-            <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
-            <p class="description-books">печатаем на высококачествен-<br>ном мелованом картоне</p>
-          </div>
-          <img src="./assets/svg/castle.svg" class="castle" alt="castle">
-        </div>
-        <div class="column">
-          <img src="./assets/svg/buratino.svg" class="buratino" alt="buratino">
-          <div class="about-book-text">
-            <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
-            <p class="description-books">на каждой странице интерактив-<br>ные подвижные элементы</p>
+            <p class="description-books">печатаем на высококачественном мелованом картоне</p>
           </div>
           <div class="about-book-text">
             <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
@@ -92,8 +112,19 @@
           </div>
           <div class="about-book-text">
             <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
+            <p class="description-books">на каждой странице интерактивные подвижные элементы</p>
+          </div>
+          <div class="about-book-text">
+            <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
             <p class="description-books">иллюстрации самых известных отечественных художников</p>
           </div>
+          <div class="about-book-text">
+            <img src="./assets/svg/ellipse.svg" class="elipse" alt="elipse">
+            <p class="description-books">тексты классических сказок адаптированы для маленьких читателей</p>
+          </div>
+        </div>
+        <div class="column">
+          <img src="./assets/png/infographics.png" alt="infographics">
         </div>
       </div>
     </div>
@@ -154,8 +185,23 @@
             <a class="about" href="https://ast.ru/book/zimnyaya-skazka-867810/?ysclid=m4vbc531xy77169262">Подробнее</a>
         </div>
         <div class="slider-arrows">
-            <img class="slider-left" src="./assets/svg/slider-arrows/arrow-left.svg" alt="left">
-            <img class="slider-right" src="./assets/svg/slider-arrows/arrow-right.svg" alt="right">
+            <div class="slider-left">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M31.4976 38.8737L33.3643 36.9737L21.9309 25.5404L33.3643 14.107L31.4976 12.207L18.1643 25.5404L31.4976 38.8737Z"
+                  fill="#FCFCFC" />
+              </svg>
+            </div>
+            <div class="slider-right">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow"
+                  d="M22.1333 39.2663L20.2666 37.3663L31.6999 25.9329L20.2666 14.4996L22.1333 12.5996L35.4666 25.9329L22.1333 39.2663Z"
+                  fill="#FCFCFC" />
+                <path
+                  d="M26 1C31.6351 1 37.1049 2.90376 41.5222 6.4025C45.9395 9.90124 49.0453 14.7897 50.3357 20.275C51.6261 25.7604 51.0255 31.5208 48.6313 36.6219C46.2371 41.7231 42.1897 45.8657 37.1457 48.378C32.1016 50.8902 26.3567 51.6247 20.8429 50.4623C15.329 49.2999 10.3696 46.3087 6.76901 41.974C3.16843 37.6393 1.1379 32.2153 1.00677 26.5818C0.875642 20.9482 2.65161 15.4356 6.04661 10.9381"
+                  stroke="#FCFCFC" stroke-width="2" />
+              </svg>
+            </div>
         </div>
       </div>
     </section>

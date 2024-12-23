@@ -74,17 +74,14 @@
   position: relative;
   margin: 0 auto;
   padding-top: 256px;
-  height: 1113px;
+  height: 1130px;
   width: 100%;
+  background-image: url('../assets/svg/carousel-arrows/background-blue.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
-.paper-blue {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-}
 
 .book-container.queeny {
   position: relative;
@@ -93,7 +90,7 @@
   /* height: 1113px;  */
 }
 
-.book-wrapper {
+.book-wrapper.king {
   display: flex;
   gap: 20px;
   transition: transform 0.5s ease-in-out;
@@ -321,6 +318,8 @@
   z-index: 15;
   position: absolute;
 }
+
+
 
 /* Карусель */
 
