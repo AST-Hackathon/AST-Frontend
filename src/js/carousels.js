@@ -68,32 +68,32 @@ document.querySelectorAll('.carousels').forEach((carousel) => {
 
 // карусель с отзывами
 
-ocument.addEventListener("DOMContentLoaded", () => {
-    const wrapper = document.querySelector(".wrapper-withReviews");
-    const reviews = document.querySelectorAll(".review");
-    const leftBtn = document.querySelector(".leftBtn");
-    const rightBtn = document.querySelector(".rightBtn");
-  
-    const reviewWidth = 310; 
-    let currentOffset = 0; 
-  
-    function updateCarousel() {
-      wrapper.style.transform = `translateX(${-currentOffset}px)`;
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.querySelector(".wrapper-withReviews");
+  const reviews = document.querySelectorAll(".review");
+  const leftBtn = document.querySelector(".leftBtn");
+  const rightBtn = document.querySelector(".rightBtn");
+
+  const reviewWidth = 310; 
+  let currentOffset = 0; 
+
+  function updateCarousel() {
+    wrapper.style.transform = `translateX(${-currentOffset}px)`;
+  }
+
+  rightBtn.addEventListener("click", () => {
+    if (currentOffset < (reviews.length - 1) * reviewWidth) {
+      currentOffset += reviewWidth;
+      updateCarousel();
     }
-  
-    rightBtn.addEventListener("click", () => {
-      if (currentOffset < (reviews.length - 1) * reviewWidth) {
-        currentOffset += reviewWidth;
-        updateCarousel();
-      }
-    });
-  
-    leftBtn.addEventListener("click", () => {
-      if (currentOffset > 0) {
-        currentOffset -= reviewWidth;
-        updateCarousel();
-      }
-    });
-  
-    updateCarousel();
   });
+
+  leftBtn.addEventListener("click", () => {
+    if (currentOffset > 0) {
+      currentOffset -= reviewWidth;
+      updateCarousel();
+    }
+  });
+
+  updateCarousel();
+});
