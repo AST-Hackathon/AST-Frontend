@@ -267,7 +267,7 @@ body {
 
 /* баннер 5 лет */
 
-.jubilee-banner-outside-container {
+.jb-outside-container {
   position: relative;
   justify-content: center;
   max-width: 1920px;
@@ -291,28 +291,28 @@ body {
   }
 }
 
-.jubilee-banner-container {
+.jb-container {
   max-width: 1525px;
   width: 100%;
 }
 
-.jubilee-banner-content {
+.jb-content {
   display: flex;
   align-items: flex-start;
   gap: 50px;
   padding-top: 70px;
 
-  .jubilee-banner-text {
+  .jb-text {
     display: flex;
     flex-direction: column;
     max-width: 650px;
 
-    .jubilee-banner-title {
+    .jb-title {
       font: 600 110px Ostrovsky;
       color: #fcfcfc;
     }
 
-    .jubilee-banner-description {
+    .jb-description {
       font: 600 32px Ostrovsky;
       color: #fcfcfc;
       line-height: 50px;
@@ -322,11 +322,22 @@ body {
 
 .jb-images {
   display: flex;
-  align-items: end;
+  align-items: baseline;
   justify-content: end;
   gap: 30px;
-  margin-top: -70px;
-  margin-left: 50px;
+  margin-top: -250px;
+
+  .jb-image22{
+    margin-left: -10px;
+  }
+  .jb-image23{
+    padding-bottom: 75px;
+    margin-left: -12px;
+  }
+  .jb-image24 {
+    padding-bottom: 200px;
+    margin-left: -7px;
+  }
 }
 
 /* Лозунги */

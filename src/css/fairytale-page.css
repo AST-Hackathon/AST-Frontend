@@ -74,7 +74,7 @@
   position: relative;
   margin: 0 auto;
   padding-top: 256px;
-  height: 1113px; 
+  height: 1113px;
   width: 100%;
 }
 
@@ -83,12 +83,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .book-container.queeny {
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
   /* width: calc(600px * 3 + 1px * 2);  */
   /* height: 1113px;  */
 }
@@ -117,12 +117,10 @@
 /* .book-container.queeny .book-wrapper {
   width: calc(600px * 5 + 20px * 4);
 } */
- 
-
 
 /* Карусель с авторами */
 
-.carousels{
+.carousels {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
@@ -135,8 +133,6 @@
   transition: transform 0.5s ease-in-out;
   width: fit-content;
 }
-
-
 
 .photos-authors {
   display: flex;
@@ -163,7 +159,7 @@
 }
 
 .book.author {
-  overflow:visible;
+  overflow: visible;
   flex: auto;
   flex: 0 0 auto;
 }
@@ -173,7 +169,6 @@
   height: 100%;
   display: block;
 }
-
 
 .info-illustrator {
   display: flex;
@@ -214,10 +209,7 @@
   top: 50%;
 }
 
-
-
 /* Карусель с отзывами */
-
 
 .review {
   position: relative;
@@ -230,15 +222,15 @@
 }
 
 .review::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 30px;
-  padding: 2px; 
-  background: linear-gradient(to top right, #28AE60, #28AEA1, #41B9FF);
+  padding: 2px;
+  background: linear-gradient(to top right, #28ae60, #28aea1, #41b9ff);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
 }
@@ -259,26 +251,24 @@
 }
 .text-review {
   font-family: Manrope;
-  font-size: 32px;
-  font-weight: 400;
-  color: #061538;
+  font-size: 30px;
   line-height: 120%;
 }
 
 .text-review.fire:after {
-  content: '\1F525''\1F525';
+  content: "\1F525""\1F525";
 }
 
 .carousels-reviews {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  height: 616px; 
+  height: 616px;
   width: 100%;
 }
 
 .book-container.reviews {
-  position: relative; 
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -298,7 +288,6 @@
   height: 250px;
 }
 
-
 .btn-review {
   text-align: center;
   padding-top: 40px;
@@ -308,7 +297,7 @@
 .reviewBtn {
   cursor: pointer;
   border: none;
-  background: #FCFCFC; 
+  background: #fcfcfc;
 }
 
 .leftBtn {
@@ -322,7 +311,7 @@
   z-index: 10;
 }
 
-.rightBtn{
+.rightBtn {
   display: block;
   padding-right: 75px;
   padding-left: 20px;
@@ -332,8 +321,6 @@
   z-index: 15;
   position: absolute;
 }
-
-
 
 /* Карусель */
 
