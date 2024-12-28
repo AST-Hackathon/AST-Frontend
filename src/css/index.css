@@ -75,12 +75,14 @@ body {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+  
 }
 
 .book-wrapper {
   display: flex;
   gap: 80px;
   transition: transform 0.5s ease-in-out;
+  
 }
 
 .book {
@@ -105,13 +107,13 @@ body {
   padding-inline: 35px;
 }
 
-.scroll-btn {
+/* .scroll-btn {
   border: none;
   cursor: pointer;
   z-index: 10;
   background: none;
   position: absolute;
-}
+} */
 
 .scroll-btn.left {
   left: 75px;
@@ -122,6 +124,33 @@ body {
   display: block;
 }
 
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.svg-icon {
+  width: 100px;
+  height: 100px;
+  transition: filter 0.2s ease; /* Плавный переход цвета */
+}
+.scroll-btn:hover .circle {
+  fill: #28AE60; 
+}
+
+.scroll-btn:hover .arrow {
+  fill: #FFFFFF; /* Стрелка становится белой */
+}
 /* Преимущества-1 */
 
 .infographics {
