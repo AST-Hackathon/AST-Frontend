@@ -81,19 +81,23 @@ document.addEventListener("DOMContentLoaded", () => {
     wrapper.style.transform = `translateX(${-currentOffset}px)`;
   }
 
-  rightBtn.addEventListener("click", () => {
-    if (currentOffset < (reviews.length - 1) * reviewWidth) {
-      currentOffset += reviewWidth;
-      updateCarousel();
-    }
-  });
+  if (rightBtn){
+    rightBtn.addEventListener("click", () => {
+      if (currentOffset < (reviews.length - 1) * reviewWidth) {
+        currentOffset += reviewWidth;
+        updateCarousel();
+      }
+    });
+  }
 
-  leftBtn.addEventListener("click", () => {
-    if (currentOffset > 0) {
-      currentOffset -= reviewWidth;
-      updateCarousel();
-    }
-  });
+  if (leftBtn) {
+    leftBtn.addEventListener("click", () => {
+      if (currentOffset > 0) {
+        currentOffset -= reviewWidth;
+        updateCarousel();
+      }
+    });
+  }
 
   updateCarousel();
 });

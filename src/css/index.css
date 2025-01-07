@@ -136,20 +136,16 @@ body {
   padding: 0;
   z-index: 10;
   position: absolute;
-  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.svg-icon {
-  width: 100px;
-  height: 100px;
-  transition: filter 0.2s ease; /* Плавный переход цвета */
-}
 .scroll-btn:hover .circle {
   fill: #28AE60; 
+  transition: 0.2s ease;
 }
 
 .scroll-btn:hover .arrow {
-  fill: #FFFFFF; /* Стрелка становится белой */
+  fill: #FFFFFF; 
+  transition: 0.2s ease;
 }
 /* Преимущества-1 */
 
@@ -164,7 +160,6 @@ body {
   display: flex;
   gap: 40px;
   justify-content: space-around;
-  flex-wrap: wrap;
 
   .column {
     display: flex;
